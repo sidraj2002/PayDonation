@@ -98,7 +98,9 @@ img {
   -ms-interpolation-mode: bicubic;
   margin-left: auto;
   margin-right: auto;
-  padding-left: 40px;
+  padding-left: 110%;
+  -webkit-filter: invert(1);
+   filter: invert(1);
 }
 #map_canvas img,
 .google-maps img {
@@ -1031,11 +1033,11 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 10px 0;
+  margin: 20px 20px;
   font-family: inherit;
   font-weight: bold;
   line-height: 20px;
-  color: inherit;
+  color: darkorange;
   text-rendering: optimizelegibility;
 }
 h1 small,
@@ -1545,6 +1547,7 @@ textarea::-webkit-input-placeholder {
 .checkbox {
   min-height: 20px;
   padding-left: 20px;
+  color: #00FF00;
 }
 .radio input[type="radio"],
 .checkbox input[type="checkbox"] {
@@ -2497,6 +2500,7 @@ legend + .control-group {
   width: 160px;
   padding-top: 5px;
   text-align: right;
+  color: #00FFFF;
 }
 .form-horizontal .controls {
   *display: inline-block;
@@ -2520,8 +2524,9 @@ legend + .control-group {
   margin-top: 10px;
 }
 .form-horizontal .form-actions {
-  padding-left: 280px;
+  padding-left: 50%;
 }
+
 table {
   max-width: 100%;
   background-color: transparent;

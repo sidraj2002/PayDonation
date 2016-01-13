@@ -14,11 +14,11 @@
 					<li><a href="signup">Sign up</a></li>
 				{/session.authenticated}
 			</ul>
-			<a class='brand' href='#' style = "padding-left:5%; color:darkorange;">PizzaShop</a>
+			<a class='brand' href='#' style = "padding-left:5%; color:darkorange;">Siddraj.com</a>
 			<div class='nav-collapse'>
 				<ul class='nav'>
 					<li><a href="/">Home</a></li>
-					<li><a href='/orderList'>Orders</a></li>
+					<li><a href='/orderList'>Donations</a></li>
 				</ul>
 			</div>
 		</div>
