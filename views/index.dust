@@ -10,19 +10,19 @@
 <form accept-charset="UTF-8" action="orderConfirm" autocomplete="off" class="simple_form form-horizontal new_user" id="new_user" method="post" novalidate="novalidate">
       <div class='container' id='content'>
 
-      <div class='row pizza-row'>
+      <div class='row pizza-row' >
         <div class='span2'>
-          <div class='image'>
+          <div class='image'style = "padding-bottom:50px; 	">
             <img  alt="Pizza 0" src="../images/0000000000000000000000000000000" />
           </div>
 
           <div class='details'>
-					<div class="controls"><input class="string required" id="order_amount" name="user[orderAmount]" size="50" type="number" value="" placeholder="00.00"/></div>
+					<div class="controls" ><input class="string required" id="order_amount" name="user[orderAmount]" size="50" type="number" value="" placeholder="Enter Amount"/></div>
 					</div>
 					<div class='details'>
-					<div class="controls"><input class="string required" id="order_amount" name="user[orderDescription]" size="50" type="number" value="" placeholder="00.00"/></div>
+					<div class="controls"><input class="string required" id="order_amount" name="user[orderDescription]" size="50" type="text" value="" placeholder="Description"/></div>
 					</div>
-            <a href="/orderConfirm?orderAmount=2&orderDescription=Pizza0" class="btn btn-small" data-disable-with="Procesing.." >Buy</a>
+
           </div>
         </div>
 
@@ -33,8 +33,8 @@
       <br/><br/><br/>
       <div class="row">
 		  <div class="span6 offset3">
-	   	    <p>This is a sample application which showcases the new PayPal REST APIs. The app uses mock data to demonstrate how you can use the REST APIs for</p>
-			<ul>
+	   	    <p style="color: darkorange;" >This is a donation page for my blog. Please feel free to contribute and help maintain it.</p>
+			<ul style="color: darkorange;">
 				<li>Saving credit card information with PayPal for later use.</li>
 				<li>Making payments using a saved credit card.</li>
 				<li>Making payments using PayPal.</li>

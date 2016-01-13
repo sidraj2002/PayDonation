@@ -196,9 +196,10 @@ exports.orderconfirm = function (req, res) {
 		console.log(req.session.amount);
 		if(( req.session.amount <= 0) || (req.session.amount == undefined)){
 			req.flash('error', { message : [{desc: "You have been signed out.", type: "info"}]});
-			res.redirect('index', {});
+			res.render('index', {});
 
-		};
+		} else {
+
 
 	db.getUser(req.session.email, function (err, user) {
 		var data = {'amount' : amount, 'desc' : desc};
@@ -209,6 +210,7 @@ exports.orderconfirm = function (req, res) {
 		res.render('order_confirm', data);
 	});
 
+};
 };
 
 exports.order = function (req, res) {

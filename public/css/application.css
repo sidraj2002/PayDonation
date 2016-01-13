@@ -92,10 +92,13 @@ img {
 
   height: auto;
   /* Part 2: Scale the height according to the width, otherwise you get stretching */
-
+  background-position: center;
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 40px;
 }
 #map_canvas img,
 .google-maps img {
@@ -235,12 +238,15 @@ textarea {
   box-sizing: border-box;
 }
 body {
+  height: 100%;
+  min-height: 100%;
   margin: 0;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #333333;
-  background-color: #ffffff;
+  background-image:url('backgroundImg6.jpg');
+  position: static;
 }
 a {
   color: #0088cc;
@@ -417,12 +423,14 @@ a:hover {
   float: left;
   min-height: 1px;
   margin-left: 20px;
+
 }
 .container,
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
   width: 940px;
+
 }
 .span12 {
   width: 940px;
@@ -967,7 +975,7 @@ a:hover {
   clear: both;
 }
 p {
-  margin: 0 0 10px;
+  margin: 0 0px 10px;
 }
 .lead {
   margin-bottom: 20px;
@@ -1392,7 +1400,7 @@ input[type="search"],
 input[type="tel"],
 input[type="color"],
 .uneditable-input {
-  background-color: #ffffff;
+  background-color: #303030;
   border: 1px solid #cccccc;
   -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
   -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
@@ -1418,7 +1426,8 @@ input[type="date"]:focus,
 input[type="month"]:focus,
 input[type="time"]:focus,
 input[type="week"]:focus,
-input[type="number"]:focus,
+input[type="number"]:focus{
+color: darkorange;},
 input[type="email"]:focus,
 input[type="url"]:focus,
 input[type="search"]:focus,
@@ -1510,27 +1519,27 @@ input[type="checkbox"]:focus {
 }
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #999999;
+  color: #00FFFF;
 }
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #999999;
+  color: #00FFFF;
 }
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #999999;
+  color: #00FFFF;
 }
 input:-moz-placeholder,
 textarea:-moz-placeholder {
-  color: #999999;
+  color: #00FFFF;
 }
 input:-ms-input-placeholder,
 textarea:-ms-input-placeholder {
-  color: #999999;
+  color: #00FFFF;
 }
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
-  color: #999999;
+  color: #00FFFF;
 }
 .radio,
 .checkbox {
@@ -2070,10 +2079,10 @@ select:focus:invalid:focus {
 }
 .form-actions {
   padding: 19px 20px 20px;
-  margin-top: 20px;
+  margin-top: 500px;
   margin-bottom: 20px;
-  background-color: #f5f5f5;
-  border-top: 1px solid #e5e5e5;
+  background-color: #282828;
+  border-top: 1px solid darkorange;
   *zoom: 1;
   *zoom: 1;
 }
@@ -2494,6 +2503,7 @@ legend + .control-group {
   *padding-left: 20px;
   margin-left: 180px;
   *margin-left: 0;
+  padding-bottom: 30px;
 }
 .form-horizontal .controls:first-child {
   *padding-left: 180px;
@@ -2510,7 +2520,7 @@ legend + .control-group {
   margin-top: 10px;
 }
 .form-horizontal .form-actions {
-  padding-left: 180px;
+  padding-left: 280px;
 }
 table {
   max-width: 100%;
@@ -5036,8 +5046,8 @@ input[type="submit"].btn.btn-mini {
 }
 .navbar-inner {
   min-height: 40px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 0px;
+  padding-right: 0px;
   background-color: #fafafa;
   background-image: -moz-linear-gradient(top, #ffffff, #f2f2f2);
   background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#ffffff), to(#f2f2f2));
@@ -5271,8 +5281,11 @@ input[type="submit"].btn.btn-mini {
 .navbar-static-top .container,
 .navbar-fixed-top .container,
 .navbar-fixed-bottom .container {
-  width: 940px;
-  width: 940px;
+  width: auto;
+  width: auto;
+  background-color: #282828;
+  padding: 0;
+
 }
 .navbar-fixed-top {
   top: 0;
@@ -7445,7 +7458,8 @@ a.badge:hover {
   .navbar-static-top .container,
   .navbar-fixed-top .container,
   .navbar-fixed-bottom .container {
-    width: 1170px;
+    width: auto;
+
   }
   .span12 {
     width: 1170px;

@@ -52,9 +52,7 @@ app.configure('development', function(){
 
 app.get('/', routes.index);
 app.post('/orderConfirm', routes.auth, routes.orderconfirm, routes.index);
-app.get('*', function(req, res) {
-    res.redirect('/');
-});
+
 
 app.get('/signup', routes.signup);
 app.post('/signup', routes.completesignup);
