@@ -1,7 +1,7 @@
  {>layout/}
 {<content}
  <div class='container' id='content'>
-		<h2>Donationa Summary</h2>
+		<h2>Donation Summary</h2>
 		<form accept-charset="UTF-8" action="/order"
 			class="simple_form form-horizontal new_order" id="order"
 			method="GET" novalidate="novalidate">
